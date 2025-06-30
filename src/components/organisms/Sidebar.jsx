@@ -41,10 +41,10 @@ const Sidebar = ({ isOpen, onClose }) => {
             >
               <div className="w-10 h-10 bg-gradient-to-br from-primary-400 to-secondary-500 rounded-2xl flex items-center justify-center">
                 <ApperIcon name="Sparkles" size={20} className="text-white" />
-              </div>
+</div>
               <div>
-                <h1 className="text-lg font-display text-gray-800">Superminds</h1>
-                <p className="text-xs text-gray-500">Explorer</p>
+                <h1 className="text-lg font-display text-gray-800">Super Minds</h1>
+                <p className="text-xs text-gray-500">Year 1 - Level 1</p>
               </div>
             </motion.div>
             

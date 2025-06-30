@@ -15,11 +15,32 @@ class ActivityService {
     return this.activities.find(activity => activity.Id === parseInt(id));
   }
 
-  async getByType(type) {
+async getByType(type) {
     await this.delay(250);
     return this.activities.filter(activity => activity.type === type);
   }
 
+  async getByUnit(unit) {
+    await this.delay(250);
+    return this.activities.filter(activity => activity.unit === unit);
+  }
+
+  async getAllUnits() {
+    await this.delay(200);
+    const units = [...new Set(this.activities.map(activity => activity.unit))];
+    return units.sort();
+  }
+
+  async getUnitProgress(unit) {
+    await this.delay(300);
+    const unitActivities = this.activities.filter(activity => activity.unit === unit);
+    const completed = unitActivities.filter(activity => activity.completed).length;
+    return {
+      total: unitActivities.length,
+      completed,
+      percentage: Math.round((completed / unitActivities.length) * 100)
+    };
+  }
   async completeActivity(id, score) {
     await this.delay(400);
     const index = this.activities.findIndex(activity => activity.Id === parseInt(id));
