@@ -17,10 +17,10 @@
     "lucide-react": "^0.400.0",
     "react": "^18.3.1",
     "react-apexcharts": "^1.7.0",
-    "react-dom": "^18.3.1",
+"react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.26.0",
-    "react-toastify": "^11.1.0"
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
