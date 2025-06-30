@@ -428,7 +428,7 @@
     "score": 0,
     "description": "Read about a fun day at the beach with family!"
   },
-  {
+{
     "Id": 40,
     "unit": "At the beach",
     "type": "writing",
@@ -438,5 +438,181 @@
     "completed": false,
     "score": 0,
     "description": "Write about your perfect day at the beach!"
+  },
+  {
+    "Id": 41,
+    "unit": "My Day",
+    "type": "phonics",
+    "title": "Time Sounds",
+    "difficulty": 2,
+    "points": 55,
+    "completed": false,
+    "score": 0,
+    "description": "Learn sounds of time words: morning, afternoon, evening, night!"
+  },
+  {
+    "Id": 42,
+    "unit": "My Day",
+    "type": "vocabulary",
+    "title": "Daily Activities",
+    "difficulty": 2,
+    "points": 70,
+    "completed": false,
+    "score": 0,
+    "description": "Master daily routine vocabulary: wake up, breakfast, school, sleep!"
+  },
+  {
+    "Id": 43,
+    "unit": "My Day",
+    "type": "reading",
+    "title": "Sarah's Busy Day",
+    "difficulty": 2,
+    "points": 80,
+    "completed": false,
+    "score": 0,
+    "description": "Read about Sarah's daily routine from morning until bedtime!"
+  },
+  {
+    "Id": 44,
+    "unit": "My Day",
+    "type": "writing",
+    "title": "My Daily Schedule",
+    "difficulty": 2,
+    "points": 65,
+    "completed": false,
+    "score": 0,
+    "description": "Write about your daily activities and what time you do them!"
+  },
+  {
+    "Id": 45,
+    "unit": "The Zoo",
+    "type": "phonics",
+    "title": "Wild Animal Sounds",
+    "difficulty": 2,
+    "points": 60,
+    "completed": false,
+    "score": 0,
+    "description": "Learn sounds of zoo animals: roar, trumpet, hiss, screech!"
+  },
+  {
+    "Id": 46,
+    "unit": "The Zoo",
+    "type": "vocabulary",
+    "title": "Zoo Animals",
+    "difficulty": 2,
+    "points": 75,
+    "completed": false,
+    "score": 0,
+    "description": "Discover zoo animal vocabulary: lion, elephant, snake, monkey!"
+  },
+  {
+    "Id": 47,
+    "unit": "The Zoo",
+    "type": "reading",
+    "title": "Zoo Adventure",
+    "difficulty": 2,
+    "points": 85,
+    "completed": false,
+    "score": 0,
+    "description": "Read an exciting story about visiting the zoo and meeting animals!"
+  },
+  {
+    "Id": 48,
+    "unit": "The Zoo",
+    "type": "writing",
+    "title": "My Zoo Visit",
+    "difficulty": 2,
+    "points": 70,
+    "completed": false,
+    "score": 0,
+    "description": "Write about your trip to the zoo and your favorite animals!"
+  },
+  {
+    "Id": 49,
+    "unit": "Where We Live",
+    "type": "phonics",
+    "title": "Place Sounds",
+    "difficulty": 2,
+    "points": 55,
+    "completed": false,
+    "score": 0,
+    "description": "Learn sounds of places: city, town, village, country!"
+  },
+  {
+    "Id": 50,
+    "unit": "Where We Live",
+    "type": "vocabulary",
+    "title": "Home Places",
+    "difficulty": 2,
+    "points": 65,
+    "completed": false,
+    "score": 0,
+    "description": "Master place vocabulary: house, apartment, street, neighborhood!"
+  },
+  {
+    "Id": 51,
+    "unit": "Where We Live",
+    "type": "reading",
+    "title": "Different Homes",
+    "difficulty": 2,
+    "points": 80,
+    "completed": false,
+    "score": 0,
+    "description": "Read about different types of homes around the world!"
+  },
+  {
+    "Id": 52,
+    "unit": "Where We Live",
+    "type": "writing",
+    "title": "My Neighborhood",
+    "difficulty": 2,
+    "points": 70,
+    "completed": false,
+    "score": 0,
+    "description": "Write about your neighborhood and the places you visit!"
+  },
+  {
+    "Id": 53,
+    "unit": "The Market",
+    "type": "phonics",
+    "title": "Shopping Sounds",
+    "difficulty": 2,
+    "points": 50,
+    "completed": false,
+    "score": 0,
+    "description": "Learn sounds of market words: buy, sell, money, change!"
+  },
+  {
+    "Id": 54,
+    "unit": "The Market",
+    "type": "vocabulary",
+    "title": "Market Words",
+    "difficulty": 2,
+    "points": 70,
+    "completed": false,
+    "score": 0,
+    "description": "Discover market vocabulary: vegetables, fruits, basket, shopkeeper!"
+  },
+  {
+    "Id": 55,
+    "unit": "The Market",
+    "type": "reading",
+    "title": "Shopping Day",
+    "difficulty": 2,
+    "points": 75,
+    "completed": false,
+    "score": 0,
+    "description": "Read about a family's shopping trip to the busy market!"
+  },
+  {
+    "Id": 56,
+    "unit": "The Market",
+    "type": "writing",
+    "title": "My Shopping List",
+    "difficulty": 2,
+    "points": 60,
+    "completed": false,
+    "score": 0,
+    "description": "Write a shopping list for your next trip to the market!"
   }
 ]
