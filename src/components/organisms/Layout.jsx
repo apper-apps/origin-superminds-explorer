@@ -21,7 +21,7 @@ const Layout = () => {
     }
   };
   
-  return (
+return (
     <div className="flex h-screen bg-background overflow-hidden">
       <Sidebar 
         isOpen={sidebarOpen} 
@@ -34,7 +34,7 @@ const Layout = () => {
           title={getPageTitle()}
         />
         
-        <main className="flex-1 overflow-auto p-4 lg:p-6">
+        <main className="flex-1 overflow-auto">
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname}
@@ -42,7 +42,7 @@ const Layout = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="h-full"
+              className="min-h-full py-4 sm:py-6 lg:py-8"
             >
               <Outlet />
             </motion.div>

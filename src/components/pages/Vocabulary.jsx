@@ -69,78 +69,82 @@ const Vocabulary = () => {
     return <ActivityCompleted activity={selectedActivity} onBack={handleBackToMenu} />;
   }
   
-  return (
-    <div className="space-y-8">
-      {/* Header */}
-      <motion.div
-        className="text-center"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
+return (
+    <div className="page-container">
+      <div className="content-wrapper space-y-6 sm:space-y-8">
+        {/* Header */}
         <motion.div
-          className="w-24 h-24 bg-gradient-to-br from-secondary-400 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-strong"
-          animate={{ rotate: [0, -10, 10, 0] }}
-          transition={{ duration: 4, repeat: Infinity }}
+          className="text-center px-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
         >
-          <ApperIcon name="BookOpen" size={40} className="text-white" />
+          <motion.div
+            className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-secondary-400 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-strong"
+            animate={{ rotate: [0, -10, 10, 0] }}
+            transition={{ duration: 4, repeat: Infinity }}
+          >
+            <ApperIcon name="BookOpen" size={32} className="text-white sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
+          </motion.div>
+          
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display text-gray-800 mb-3 sm:mb-4">
+            Word World 🌍
+          </h1>
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Welcome to Word World! Explore new words, match pictures with meanings, 
+            and build your vocabulary one word at a time. Every word is an adventure! 📖
+          </p>
         </motion.div>
         
-        <h1 className="text-4xl font-display text-gray-800 mb-4">
-          Word World 🌍
-        </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Welcome to Word World! Explore new words, match pictures with meanings, 
-          and build your vocabulary one word at a time. Every word is an adventure! 📖
-        </p>
-      </motion.div>
-      
-      {/* Activities Grid */}
-      {activities.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {activities.map((activity, index) => (
-            <ActivityCard
-              key={activity.Id}
-              activity={activity}
-              onStart={handleStartActivity}
-              index={index}
-            />
-          ))}
-        </div>
-      ) : (
-        <Empty
-          title="No vocabulary activities yet!"
-          message="New word adventures are being prepared for you. Check back soon!"
-          actionText="Back to Home"
-          onAction={() => window.history.back()}
-        />
-      )}
-      
-      {/* Learning Tips */}
-      <motion.div
-        className="card p-6 bg-gradient-to-r from-secondary-50 to-accent-50 border-secondary-200"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-      >
-        <div className="flex items-center space-x-4">
-          <motion.div
-            className="w-12 h-12 bg-gradient-to-br from-secondary-400 to-secondary-500 rounded-full flex items-center justify-center"
-            animate={{ pulse: [1, 1.1, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          >
-            <ApperIcon name="Heart" size={20} className="text-white" />
-          </motion.div>
-          <div>
-            <h3 className="font-display text-lg text-gray-800 mb-1">
-              Word Learning Tip! ❤️
-            </h3>
-            <p className="text-gray-600">
-              Try to use new words in sentences! This helps you remember them better 
-              and understand how they work with other words.
-            </p>
+        {/* Activities Grid */}
+        {activities.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4">
+            {activities.map((activity, index) => (
+              <ActivityCard
+                key={activity.Id}
+                activity={activity}
+                onStart={handleStartActivity}
+                index={index}
+              />
+            ))}
           </div>
-        </div>
-      </motion.div>
+        ) : (
+          <div className="px-4">
+            <Empty
+              title="No vocabulary activities yet!"
+              message="New word adventures are being prepared for you. Check back soon!"
+              actionText="Back to Home"
+              onAction={() => window.history.back()}
+            />
+          </div>
+        )}
+        
+        {/* Learning Tips */}
+        <motion.div
+          className="card p-4 sm:p-6 bg-gradient-to-r from-secondary-50 to-accent-50 border-secondary-200 mx-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <div className="flex items-start sm:items-center space-x-3 sm:space-x-4">
+            <motion.div
+              className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-secondary-400 to-secondary-500 rounded-full flex items-center justify-center flex-shrink-0"
+              animate={{ pulse: [1, 1.1, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <ApperIcon name="Heart" size={18} className="text-white sm:w-5 sm:h-5" />
+            </motion.div>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-display text-base sm:text-lg text-gray-800 mb-1">
+                Word Learning Tip! ❤️
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                Try to use new words in sentences! This helps you remember them better 
+                and understand how they work with other words.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 };
