@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "type": "phonics",
+    "title": "Letter Sounds A-E",
+    "difficulty": 1,
+    "points": 50,
+    "completed": true,
+    "score": 85,
+    "description": "Learn the sounds of letters A, B, C, D, and E with fun animations!"
+  },
+  {
+    "Id": 2,
+    "type": "phonics",
+    "title": "Letter Sounds F-J",
+    "difficulty": 1,
+    "points": 50,
+    "completed": true,
+    "score": 92,
+    "description": "Discover the sounds of letters F, G, H, I, and J with interactive games!"
+  },
+  {
+    "Id": 3,
+    "type": "phonics",
+    "title": "Rhyming Fun",
+    "difficulty": 2,
+    "points": 75,
+    "completed": false,
+    "score": 0,
+    "description": "Match words that sound alike in this musical rhyming adventure!"
+  },
+  {
+    "Id": 4,
+    "type": "vocabulary",
+    "title": "Animals Around Us",
+    "difficulty": 1,
+    "points": 60,
+    "completed": true,
+    "score": 78,
+    "description": "Learn animal names with colorful pictures and sounds!"
+  },
+  {
+    "Id": 5,
+    "type": "vocabulary",
+    "title": "Colors and Shapes",
+    "difficulty": 1,
+    "points": 55,
+    "completed": false,
+    "score": 0,
+    "description": "Explore the world of colors and basic shapes through interactive games!"
+  },
+  {
+    "Id": 6,
+    "type": "reading",
+    "title": "The Happy Cat",
+    "difficulty": 1,
+    "points": 80,
+    "completed": true,
+    "score": 88,
+    "description": "Read along with our friendly cat character in this delightful story!"
+  },
+  {
+    "Id": 7,
+    "type": "reading",
+    "title": "My Family",
+    "difficulty": 1,
+    "points": 75,
+    "completed": false,
+    "score": 0,
+    "description": "Learn about family members through pictures and simple sentences!"
+  },
+  {
+    "Id": 8,
+    "type": "writing",
+    "title": "Trace Letters A-E",
+    "difficulty": 1,
+    "points": 45,
+    "completed": true,
+    "score": 95,
+    "description": "Practice writing your first letters with guided tracing!"
+  },
+  {
+    "Id": 9,
+    "type": "writing",
+    "title": "My First Words",
+    "difficulty": 2,
+    "points": 70,
+    "completed": false,
+    "score": 0,
+    "description": "Write simple three-letter words with helpful guides!"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "Id": 1,
+    "name": "Alex Explorer",
+    "yearLevel": 1,
+    "currentLevel": 3,
+    "totalPoints": 450,
+    "badges": ["First Steps", "Phonics Master", "Word Wizard"],
+    "completedActivities": ["phonics-1", "phonics-2", "vocab-1", "story-1"]
+  }
+]
