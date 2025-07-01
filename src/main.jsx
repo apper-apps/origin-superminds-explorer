@@ -1,13 +1,11 @@
 import './index.css'
-import React, { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "@/App";
-import { initCanvasErrorPrevention } from "@/utils/canvasHelpers";
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import App from '@/App'
 
-// Initialize canvas error prevention to handle external script issues
-initCanvasErrorPrevention();
+const root = createRoot(document.getElementById('root'))
 
-createRoot(document.getElementById('root')).render(
+root.render(
   <StrictMode>
     <App />
   </StrictMode>,
